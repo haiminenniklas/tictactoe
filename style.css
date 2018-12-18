@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+
+:root {
+    --nav-bg: #1e1e1e;
+    --bg: #2d2d2d;
+    --text: #e5e5e5;
+    --link: #3e9cc1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', sans-serif;
+    background: var(--bg);
+}
+
+div.header {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 32px;
+    margin-bototm: 30px;
+    background: var(--nav-bg);
+    color: var(--text);
+}
+
+div.footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 24px;
+    color: var(--text);
+}
+
+div.footer a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+div.settings {
+    margin: 60px auto;
+    border: 3px solid var(--text);
+    border-radius: 20px;
+    text-align: center;
+    width: 70%;
+    padding: 20px 30px;
+    color: var(--text);
+    display: block;
+}
+
+div.settings > h3 {
+    font-size: 24px;
+}
+
+div.settings > hr {
+    margin: 15px auto;
+    opacity: 0.6;
+    width: 25%;
+}
+
+div.settings > div.values {
+    padding-top: 10px;
+}
+
+div#gameStart {
+    margin-top: 20px;
+    text-align: center;
+}
+
+div#gameStart input[type=button] {
+    background-color: var(--link);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+div.settings input[type=number] {
+    width: 40px;
+    text-align: center;
+    padding: 8px 0;
+}
+
+div.settings select {
+    width: 80px;
+    padding: 8px 0;
+}
+
+/* GAME STYLING */
+
+div#game {
+    display: block;
+    margin: 60px auto;
+    border: 3px solid var(--text);
+    border-radius: 20px;
+    width: 70%;
+    padding: 20px 30px;
+    transition: all 3s ease;
+}
+
+div.second-column, div.first-column {
+    border-bottom: 2px solid var(--text);
+}
+
+div.rows div {
+    display: flex;
+    justify-content: center;
+}
+
+div.column {
+    width: 80px;
+    height: 120px;
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+div.middle {
+    border-left: 2px solid var(--text);
+    border-right: 2px solid var(--text);
+}
+
+div.info {
+    color: var(--text);
+}
+
+hr#gameDivider {
+    opacity: 0.7;
+    margin: 20px 0 40px 0;
+
+}
+
+div#win-message {
+    margin: 20px auto;
+    text-align: center;
+    background: #33f449;
+    border-radius: 12px;
+}
+
+div#win-message h3 {
+    font-size: 32px;
+    color: white;
+}
